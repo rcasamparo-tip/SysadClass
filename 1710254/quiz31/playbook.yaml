@@ -1,0 +1,8 @@
+---
+- hosts: Ubuntu
+  tasks:
+    - name: Install vsftpd
+      apt:
+        name: vsftpd
+        state: present
+        update_cache: yes
